@@ -1,3 +1,26 @@
+<html>
 <head>
-  <meta http-equiv='refresh' content='0; URL=http://192.168.1.88/login.html'>
+    <title>*** GITHUB *** Hotspot Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 50px;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
+<body>
+    <h1>Welcome to our Wi-Fi Hotspot</h1>
+    <p>Enter your phone number to receive a verification code.</p>
+    <form action="login.php" method="POST">
+        <input type="text" name="phoneNumber" placeholder="Enter Phone Number" required><br>
+        <input type="submit" value="Send SMS">
+    </form>
+</body>
+</html>
