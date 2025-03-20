@@ -10,7 +10,7 @@ foreach ($codes as $line) {
     list($savedPhoneNumber, $savedCode) = explode(':', $line);
     if ($savedPhoneNumber == $phoneNumber && $savedCode == $enteredCode) {
         $API = new RouterosAPI();
-        
+        echo "RUN TEST1 OK"; 
         // Replace with your MikroTik Router's IP and credentials
         $host = '192.168.1.7';  // MikroTik IP address
         $username = 'admin';      // MikroTik username
